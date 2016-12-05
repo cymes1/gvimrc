@@ -30,6 +30,7 @@ filetype plugin indent on    " required
 set number
 set tabstop=4
 set hlsearch
+set incsearch
 syntax on
 colorscheme monokai
 set guioptions-=m
@@ -38,3 +39,5 @@ set guioptions-=r
 set guioptions-=L
 set noerrorbells
 set vb t_vb=
+filetype indent off
+set autoindent
