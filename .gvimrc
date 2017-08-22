@@ -9,6 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
 
 Plugin 'Monokai'
 
@@ -41,3 +42,6 @@ set noerrorbells
 set vb t_vb=
 filetype indent off
 set autoindent
+PluginInstall
+q
+NERDTree
