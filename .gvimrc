@@ -9,7 +9,9 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tikhomirov/vim-glsl'
 
 Plugin 'Monokai'
 
@@ -28,8 +30,13 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" vim will seek for .vimrc in working directory
+set exrc
+" in nonstandard .vimrc files shell commands are not allowed
+set secure
 set number
 set tabstop=4
+set shiftwidth=4
 set hlsearch
 set incsearch
 syntax on
@@ -41,7 +48,7 @@ set guioptions-=L
 set noerrorbells
 set vb t_vb=
 filetype indent off
-set autoindent
+set cindent
 PluginInstall
 q
 NERDTree
