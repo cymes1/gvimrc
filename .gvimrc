@@ -13,7 +13,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tikhomirov/vim-glsl'
 
-Plugin 'Monokai'
+Plugin 'gruvbox'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -39,8 +40,6 @@ set tabstop=4
 set shiftwidth=4
 set hlsearch
 set incsearch
-syntax on
-colorscheme monokai
 set guioptions-=m
 set guioptions-=T
 set guioptions-=r
@@ -49,6 +48,8 @@ set noerrorbells
 set vb t_vb=
 filetype indent off
 set cindent
-PluginInstall
-q
-NERDTree
+autocmd vimenter * NERDTree
+
+syntax enable
+set background=dark
+colorscheme gruvbox
